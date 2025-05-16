@@ -1,13 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C4E09750-558C-4A92-A1BC-ACC99E6BDB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeTale.MagicOnion.Filter.Client", "src\FreeTale.MagicOnion.Filter.Client\FreeTale.MagicOnion.Filter.Client.csproj", "{AE738979-0FCE-4F01-B481-758C70222328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeTale.MagicOnion.Filter.Server", "src\FreeTale.MagicOnion.Filter.Server\FreeTale.MagicOnion.Filter.Server.csproj", "{886313DC-74A0-460F-82DC-7C3E5E7D60EB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE738979-0FCE-4F01-B481-758C70222328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE738979-0FCE-4F01-B481-758C70222328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE738979-0FCE-4F01-B481-758C70222328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE738979-0FCE-4F01-B481-758C70222328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886313DC-74A0-460F-82DC-7C3E5E7D60EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886313DC-74A0-460F-82DC-7C3E5E7D60EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886313DC-74A0-460F-82DC-7C3E5E7D60EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886313DC-74A0-460F-82DC-7C3E5E7D60EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE738979-0FCE-4F01-B481-758C70222328} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{886313DC-74A0-460F-82DC-7C3E5E7D60EB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD99D477-AE6D-434A-91F2-22354E07F0C1}

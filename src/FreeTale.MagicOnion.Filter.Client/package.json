@@ -1,0 +1,16 @@
+{
+  "name": "me.freetale.magiconion.filter.client.unity",
+  "version": "0.1.0",
+  "displayName": "FreeTale.MagicOnion.Filter.Client.Unity",
+  "description": "Reusable Client filter for magic onion",
+  "unity": "6000.0",
+  "dependencies": {},
+  "keywords": [
+    "magiconion", "filter", "network"
+  ],
+  "author": {
+    "name": "FreeTale",
+    "email": "free@freetale.me",
+    "url": "https://freetale.me"
+  }
+}

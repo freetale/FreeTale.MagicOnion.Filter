@@ -1,0 +1,17 @@
+{
+    "name": "FreeTale.MagicOnion.Filter.Client.Unity",
+    "rootNamespace": "",
+    "references": [
+        "MagicOnion.Client",
+        "MagicOnion.Unity"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
