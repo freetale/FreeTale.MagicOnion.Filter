@@ -1,4 +1,5 @@
 ﻿#if UNITY_2017_1_OR_NEWER
+using Grpc.Core;
 using MagicOnion.Client;
 using System;
 using System.Collections.Generic;
@@ -17,13 +18,18 @@ namespace FreeTale.MagicOnion.Filter.Client
             {
                 response = await next.Invoke(context);
             }
+            catch (RpcException e)
+            {
+                Debug.LogError($"{e}\n{e.StackTrace}");
+                throw;
+            }
             catch (Exception e)
             {
                 Debug.LogException(e);
                 throw;
             }
             var status = response.GetStatus();
-            Debug.Log($"{context.MethodPath} {context.MethodPath} -- [{status.StatusCode}] {status}");
+            Debug.Log($"{context.MethodPath} {context.MethodPath} -- [{status.StatusCode}] {status} ");
             return response;
         }
     }
