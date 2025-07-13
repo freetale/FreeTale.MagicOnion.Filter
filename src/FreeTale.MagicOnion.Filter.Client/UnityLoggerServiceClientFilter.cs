@@ -20,7 +20,7 @@ namespace FreeTale.MagicOnion.Filter.Client
             }
             catch (RpcException e)
             {
-                Debug.LogError($"{e}\n{e.StackTrace}");
+                Debug.LogError($"{e}\n{e.Status.Detail}");
                 throw;
             }
             catch (Exception e)
